@@ -70,7 +70,7 @@ class Family extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('FamilyMembers'),
-        backgroundColor: Color.fromARGB(255, 2, 157, 64),
+      backgroundColor: Color(0xff46322b),
       ),
       body: ListView.builder(
         itemCount: family.length,
@@ -78,6 +78,7 @@ class Family extends StatelessWidget {
           return Items(
             number: family[index],
             color: Color.fromARGB(255, 2, 157, 64),
+            WhichPage: 'family_members',
           );
         },
       ),
