@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:toku_app/components/Category.dart';
 import 'package:toku_app/screens/NumbersPage.dart';
 import 'package:toku_app/screens/ColorsPage.dart';
+import 'package:toku_app/screens/FamilyMembersPage.dart';
+import 'package:toku_app/screens/PhrasesPage.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -24,7 +26,7 @@ class HomePage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return NumbersPage();
+                    return NumbersPageWidget();
                   },
                 ),
               );
@@ -38,7 +40,7 @@ class HomePage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return FamilyMembersPage();
+                    return FamilyPageWidget();
                   },
                 ),
               );
@@ -52,7 +54,7 @@ class HomePage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return ColorsPage();
+                    return ColorsPageWidget();
                   },
                 ),
               );
@@ -61,7 +63,16 @@ class HomePage extends StatelessWidget {
           Category(
             text: 'Pharses',
             color: Color.fromARGB(255, 9, 170, 198),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return PhrasesPageWidget();
+                  },
+                ),
+              );
+            },
           ),
         ],
       ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:toku_app/components/Items_in_the_categories.dart';
 import '../Models/Items_content.dart';
 
-class NumbersPage extends StatelessWidget {
+class NumbersPageWidget extends StatelessWidget {
   final List<items_content> numbers = const [
     items_content(
       sound: 'number_one_sound.mp3',
@@ -13,37 +13,37 @@ class NumbersPage extends StatelessWidget {
     items_content(
         sound: 'number_two_sound.mp3',
         image: 'assets/images/numbers/number_two.png',
-        jpName: "ni",
+        jpName: "Ni",
         enName: 'Two'),
     items_content(
         sound: 'number_three_sound.mp3',
         image: 'assets/images/numbers/number_three.png',
-        jpName: "san",
+        jpName: "San",
         enName: 'Three'),
     items_content(
         sound: 'number_four_sound.mp3',
         image: 'assets/images/numbers/number_four.png',
-        jpName: "shi, yon",
+        jpName: "Shi",
         enName: 'Four'),
     items_content(
         sound: 'number_five_sound.mp3',
         image: 'assets/images/numbers/number_five.png',
-        jpName: "go",
+        jpName: "Go",
         enName: 'Five'),
     items_content(
         sound: 'number_six_sound.mp3',
         image: 'assets/images/numbers/number_six.png',
-        jpName: "roky",
+        jpName: "Roky",
         enName: 'Six'),
     items_content(
         sound: 'number_seven_sound.mp3',
         image: 'assets/images/numbers/number_seven.png',
-        jpName: "shichi ,nana",
+        jpName: "Shichi",
         enName: 'Seven'),
     items_content(
         sound: 'number_eight_sound.mp3',
         image: 'assets/images/numbers/number_eight.png',
-        jpName: "hachi",
+        jpName: "Hachi",
         enName: 'Eight'),
     items_content(
         sound: 'number_nine_sound.mp3',
@@ -67,7 +67,7 @@ class NumbersPage extends StatelessWidget {
         itemCount: numbers.length,
         itemBuilder: (context, index) {
           return Items(
-            number: numbers[index],
+            element: numbers[index],
             color: Colors.orange,
             WhichPage: 'numbers',
           );
