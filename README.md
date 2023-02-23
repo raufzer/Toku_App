@@ -1,4 +1,4 @@
-## Toku - Learn Japanese
+# Toku - Learn Japanese
 Toku is a Flutter app that allows you to learn the Japanese language in a fun and engaging way. The app features several categories, including colors, family members, numbers, and phrases, each with English and Japanese translations and pronunciations.
 
 ## Getting Started
